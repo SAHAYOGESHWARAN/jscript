@@ -8,10 +8,11 @@ const setProfile = function(name, age) {
     this.age = age;
 };
 
-let params = ['gokul', 30];
-setProfile.apply(profile, params); 
+const boundProfile = setProfile.bind(profile, 'gokul', 30);
+boundProfile(); 
 
 console.log(profile); 
 
-// Output
- //{ name: 'gokul', age: 30 }
+
+
+// Output: { name: 'gokul', age: 30 }
