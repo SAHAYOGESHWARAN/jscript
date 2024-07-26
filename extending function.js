@@ -5,11 +5,17 @@ const Car = function(color){
 Car.prototype.getColor = function() {
     return this.color;
 }
-
-
-const blueCar = new Car('blue');
-console.log(blueCar.getColor());
+const ToyCar = function(color,model){
+    Car.call(this,color);
+    this.model = model;
+};
+ToyCar.prototype = Object.create(Car.prototype);
+ToyCar.prototype.getModel = function(){
+    return this.model;
+}
+const speedyBlueCar = new ToyCar('blue', 'speedy');
+console.log(speedyBlueCar.getColor(),speedyBlueCar.getModel());
 
 
 //output
-//blue
+//blue speedy
