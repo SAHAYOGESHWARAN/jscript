@@ -1,16 +1,31 @@
-const willCleanTheRoom = new Promise((resolve,reject)=>{
-    //do what you told
-    setTimeout(()=>{
-        let cleanRoom = true;
-        if(cleanRoom){
-            resolve('cleaned the room');
-            }else{
-                reject('did not clean the room');
+
+const fetchUserData = (userId) => {
+    return new Promise((resolve, reject) => {
+       
+        setTimeout(() => {
+            const apiResponse = {
+                success: true,
+                data: {
+                    id: userId,
+                    name: 'saha',
+                    email: 'saha@example.com'
                 }
-                },2000);
-});
+            };
+            
+            if (apiResponse.success) {
+                resolve(apiResponse.data);
+            } else {
+                reject('Failed to fetch user data');
+            }
+        }, 2000); 
+    });
+};
 
-willCleanTheRoom.then((resolveStatus) => {
-    console.log(resolveStatus);
-});
 
+fetchUserData(1)
+    .then((userData) => {
+        console.log('User Data:', userData);
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
