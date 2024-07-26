@@ -1,18 +1,24 @@
-const add = function(a,b){
+const add = function(a, b) {
     return a + b;
 };
 
-let total = add(1,2,3);
-const Car = function(color){
+let total = add(1, 2);  
+console.log(total); 
+
+const Car = function(color) {
     this._color = color;
 };
 
 const blueCar = new Car('blue');
-const redCar =new Car('red');
-const grayCar =new Car('gray');
-console.log(grayCar)
+const redCar = new Car('red');
+const grayCar = new Car('gray');
+
+console.log(blueCar._color);  
+console.log(redCar._color);  
+console.log(grayCar._color);  
 
 
-
-//output
-//Car { _color: 'gray' } 
+//3 
+// Outputs: 'blue'
+// Outputs: 'red'
+// Outputs: 'gray'
