@@ -15,8 +15,12 @@ const profile ={
 };
 
 //console.log(profile.getName());
-console.log(profile.children[0].getName());
+//console.log(profile.children[0].getName());
+const getNameloose = profile.getName;
+console.log(getNameloose());
+
+
 
 
 //output 
-//gokul
+//undefined // 
