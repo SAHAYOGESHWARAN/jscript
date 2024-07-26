@@ -13,7 +13,8 @@ class Car {
 }
 
 const blueCar = new Car('blue');
-console.dir(blueCar.color);  
+console.log(blueCar.color); 
 
-//output
-//blue
+
+
+//  output the color blue
