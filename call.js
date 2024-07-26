@@ -11,7 +11,7 @@ const setProfile = function(name, age) {
 const boundProfile = setProfile.bind(profile, 'gokul', 30);
 boundProfile(); 
 
-console.log(profile); 
+console.log(profile);
 
 
 
