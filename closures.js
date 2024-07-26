@@ -15,7 +15,7 @@ const outerCounter = counter();
 
 //console.log(outerCounter);
 outerCounter.add(2);
-outerCounter.add(2);
+outerCounter.subtract(1);
 
 console.log(outerCounter.print());
 
