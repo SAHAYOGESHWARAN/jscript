@@ -4,8 +4,13 @@ const profile ={
 
 };
 
-const setName = function(name,age){
+const setProfile = function(name,age){
     this.name = name;
+    this.age = age;
 };
 
-setName.call(profile,'gokul')
+setProfile.call(profile,'gokul',30);
+console.log(profile);
+
+//output
+//{ name: 'gokul', age: 30 }
