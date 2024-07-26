@@ -1,13 +1,14 @@
 const Car = function(color) {
-    let setColor = function() {
-        this.color = color;
-    }.bind(this); 
-    setColor();
+    this.color = color; 
 };
 
 const blueCar = new Car('blue');
 console.log(blueCar); 
 
 
-// Output:
-// Car { color: 'blue' }
+
+
+
+
+
+// Output: Car { color: 'blue' }
