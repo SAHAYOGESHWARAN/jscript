@@ -19,8 +19,14 @@ const counter = () => {
 
 const outerCounter = counter();
 
-outerCounter.add(2).subtract(1).print(); 
+outerCounter
+.add(2)
+.add(2)
+.add(2)
+.add(2)
+.subtract(1)
+.print(); 
 
 
 
-// Output: 1
+// Output: 7
