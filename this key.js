@@ -1,14 +1,22 @@
 const profile ={
     name:"saha",
-    age: 25,
+    children:[
+        {
+            name:"gokul",
+            getName(){
+                return this.name;
+            }
+        }
+    ],
     getName(){
         return this.name;
 
     }
 };
 
-console.log(profile.getName())
+//console.log(profile.getName());
+console.log(profile.children[0].getName());
 
 
 //output 
-//saha
+//gokul
