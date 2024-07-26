@@ -2,14 +2,17 @@ const add = function(a,b){
     return a + b;
 };
 
-let total = add(1,2);
+let total = add(1,2,3);
 const Car = function(color){
     this._color = color;
 };
 
 const blueCar = new Car('blue');
 const redCar =new Car('red');
-console.log(redCar)
+const grayCar =new Car('gray');
+console.log(grayCar)
+
+
 
 //output
-//Car { _color: 'red' } 
+//Car { _color: 'gray' } 
